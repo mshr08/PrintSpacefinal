@@ -177,6 +177,25 @@ body {
   padding: 10px 30px;
 }
 
+.modal-content {
+  height: 500px;
+}
+.modal-content .modal-header {
+  background-color: white;
+}
+@media screen and (max-width: 576px) {
+  .modal-content .modal-body {
+    height: 100%;
+    background-color: white;
+  }
+  .modal-content .modal-body li {
+    padding: 10px 10px;
+  }
+  .modal-content .modal-body li a {
+    color: black;
+  }
+}
+
 .easy-to-create .inner-first {
   margin: 0 10px 0 150px;
 }
@@ -347,4 +366,39 @@ body {
   .brands .logo-image {
     display: none;
   }
+}
+
+.easy-to-launch .cream-background {
+  background-color: #F2E6D6;
+  height: 500px;
+  border-radius: 20px;
+}
+.easy-to-launch .cream-background .white-background {
+  background-color: white;
+  width: 50px;
+  height: 20px;
+}
+.easy-to-launch .easy-right .easy-launch {
+  background-color: #E3EFCE;
+}
+.easy-to-launch .easy-right .create-text {
+  font-size: 50px;
+}
+.easy-to-launch .easy-right .full-administration {
+  font-size: 20px;
+  color: #7E7E7E;
+}
+.easy-to-launch .easy-right .shirts {
+  width: 100px;
+  height: 100px;
+}
+.easy-to-launch .easy-right .sell {
+  font-size: 20px;
+}
+.easy-to-launch .easy-right .duis {
+  font-size: 16px;
+  color: #7E7E7E;
+}
+.easy-to-launch .easy-right .globe {
+  font-size: 20px;
 }/*# sourceMappingURL=index.css.map */

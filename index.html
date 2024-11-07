@@ -127,19 +127,48 @@
         </div>
     </header>
     <div class="container-fluid my-4">
-        <div class="print d-lg-none row justify-content-between col-12">
+        <div class="d-lg-none row justify-content-between col-12">
             <div class="col-1">
-                <i class="bars fa-solid fa-bars p-2 "></i>
+                <button type="button" class="col-12 btn  d-lg-none d-block" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <span class="navbar-toggler-icon"><i class="bars fa-solid fa-bars p-2 "></i></span>
+                </button>
             </div>
-            <img src="./images/logo-black.png" alt="" class="col-5 logo-img">
+            <img src="./images/logo-black.png" alt="" class="logo-img col-5">
             <div class="d-flex col-4 my-2">
                 <i class="fa-solid fa-magnifying-glass px-1"></i>
                 <i class="fa-regular fa-user px-1"></i>
-            <i class="fa-regular fa-star px-1"><sup class="rounded-circle text-bg-danger p-1 border">0</sup></i>
-            <i class="fa-solid fa-cart-shopping px-1"><sup class="rounded-circle text-bg-danger p-1">0</sup></i>
+                <i class="fa-regular fa-star px-1"><sup class="rounded-circle text-bg-danger p-1 border">0</sup></i>
+                <i class="fa-solid fa-cart-shopping px-1"><sup class="rounded-circle text-bg-danger p-1">0</sup></i>
             </div>
         </div>
     </div>
+    <div class="container d-flex align-items-center d-lg-none">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul
+                            class="modal-exp d-lg-flex list-unstyled align-items-lg-center m-0 p-0 d-md-block align-items-md-center">
+                            <li><a href="#hero" class="active">Home</a></li>
+                            <li><a href="#about" class="list-item">About</a></li>
+                            <li><a href="#services" class="list-item">Services</a></li>
+                            <li><a href="#portfolio" class="list-item">Portfolio</a></li>
+                            <li><a href="#team" class="list-item">Team</a></li>
+                            <li><a href="#pricing" class="list-item">Pricing</a></li>
+                            <li><a href="#contact" class="list-item">Contact</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="easy-to-create container-fluid my-5">
         <div class="row">
             <div class="inner-first col-lg-5 col-12 my-5">
@@ -199,6 +228,34 @@
             <img src="./images/logo-lattice-b.png" alt="" class="logo-image">
             <img src="./images/logo-spotify-b.png" alt="" class="logo-image">
             <img src="./images/logo-upwork-b.png" alt="" class="logo-image">
+        </div>
+    </div>
+    <div class="easy-to-launch container-fluid col-12">
+        <div class="row justify-content-center gap-5">
+            <div class="easy-left col-4">
+                <div class="cream-background col-12">
+                    <div class="white-background rounded border-0 ">
+                        <input type="text" placeholder="What are you looking for?">
+                    </div>
+                </div>
+            </div>
+            <div class="easy-right col-6 ">
+                <button class="easy-launch rounded-pill border-0 py-2 px-3 fw-bold">Easy to launch</button>
+                <p class="create-text fw-bold col-8 my-3">Create and sell custom on-demand products</p>
+                <p class="full-administration col-8 my-3">A full administration printing background. Print shirts for yourself or your online business</p>
+                <div class="d-flex">
+                    <div>
+                        <img src="./images/two-shirts-svgrepo-com.svg" alt="" class="shirts">
+                        <p class="sell fw-bold col-4">Sell globally, produce locally</p>
+                        <p class="duis col-6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                    </div>
+                    <div>
+                        <i class="globe fa-solid fa-globe"></i>
+                        <p class="sell fw-bold col-4">World wideshipping</p>
+                        <p class="duis col-6">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="./index.js"></script>

@@ -216,6 +216,49 @@ body {
   }
 }
 
+// .modal-content {
+//   height: 855px;
+
+//   .modal-header {
+//       background-color: $green;
+//   }
+
+//   .modal-body {
+//       @media screen and (max-width:576px) {
+//           height: 100%;
+//           background-color: $green;
+
+//           li {
+//               padding: 10px 10px;
+
+//               a {
+//                   color: black;
+//               }
+//           }
+//       }
+//   }
+
+
+// }
+.modal-content{
+  height: 500px;
+  .modal-header{
+    background-color: $white-color;
+  }
+  .modal-body{
+    @media screen and (max-width:576px) {
+      height: 100%;
+      background-color: $white-color;
+      li{
+        padding: 10px 10px;
+        a{
+          color: $black-color;
+        }
+      }
+    }
+  }
+}
+
 .easy-to-create {
   .inner-first {
     margin: 0 10px 0 150px;
@@ -452,6 +495,46 @@ body {
     }
     .logo-image{
       display: none;
+    }
+  }
+}
+
+.easy-to-launch{
+  .cream-background{
+    background-color: $cream-color;
+    height: 500px;
+    border-radius: 20px;
+    .white-background{
+      background-color: $white-color;
+      width: 50px;
+      height: 20px;
+      
+    }
+  }
+  .easy-right{
+    .easy-launch{
+      background-color: $lightgreen-color;
+    }
+    .create-text{
+      font-size: 50px;
+    }
+    .full-administration{
+      font-size: 20px;
+      color: $grey-color;
+    }
+    .shirts {
+      width: 100px;
+      height: 100px;
+    }
+    .sell{
+      font-size: 20px;
+    }
+    .duis{
+      font-size: 16px;
+      color: $grey-color;
+    }
+    .globe{
+      font-size: 20px;
     }
   }
 }
