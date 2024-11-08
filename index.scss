@@ -122,8 +122,9 @@ body {
     }
   }
 }
-@media screen and (max-width:576px){
-  .bars{
+
+@media screen and (max-width:576px) {
+  .bars {
     background-color: $lightgrey-color;
     font-size: 16px;
   }
@@ -240,18 +241,22 @@ body {
 
 
 // }
-.modal-content{
+.modal-content {
   height: 500px;
-  .modal-header{
+
+  .modal-header {
     background-color: $white-color;
   }
-  .modal-body{
+
+  .modal-body {
     @media screen and (max-width:576px) {
       height: 100%;
       background-color: $white-color;
-      li{
+
+      li {
         padding: 10px 10px;
-        a{
+
+        a {
           color: $black-color;
         }
       }
@@ -330,34 +335,55 @@ body {
   }
 
   .inner-second {
-    gap: 0 70px;
+    @media screen and (min-width : 992px) {
+      gap: 0 70px;
 
-    div {
-      width: 300px;
-      height: 300px;
+      div {
+        width: 300px;
+        height: 300px;
 
-      // overflow: hidden;
-      &:hover .banner-images {
-        transform: scale(1.01);
-        transition: all 1s;
-      }
+        // overflow: hidden;
+        &:hover .banner-images {
+          transform: scale(1.01);
+          transition: all 1s;
+        }
 
-      &:hover .banner-img {
-        transform: scale(1.01);
-        transition: all 1s;
-      }
+        &:hover .banner-img {
+          transform: scale(1.01);
+          transition: all 1s;
+        }
 
-      @media screen and (min-width:992px) {
         .banner-images {
           position: relative;
           top: 40px;
           border-radius: 20px;
-  
+
+        }
+
+        .banner-img {
+          border-radius: 20px;
         }
       }
+    }
 
-      .banner-img {
-        border-radius: 20px;
+    @media screen and (max-width : 576px) {
+      display: flex;
+      justify-content: center;
+      gap: 10px 30px;
+
+      div {
+
+        .banner-images {
+          width: 180px;
+          height: 180px;
+          border-radius: 20px;
+        }
+
+        .banner-img {
+          width: 180px;
+          height: 180px;
+          border-radius: 20px;
+        }
       }
     }
   }
@@ -390,22 +416,22 @@ body {
     }
   }
 
-  @media screen and (max-width:576px) {
-    .inner-second {
-      display: flex;
+  // @media screen and (max-width:576px) {
+  //   .inner-second {
+  //     display: flex;
 
-      .banner-images {
-        width: 200px;
-        height: 200px;
-        border-radius: 20px;
-      }
+  //     .banner-images {
+  //       width: 200px;
+  //       height: 200px;
+  //       border-radius: 20px;
+  //     }
 
-      .banner-img {
-        width: 200px;
-        height: 200px;
-      }
-    }
-  }
+  //     .banner-img {
+  //       width: 200px;
+  //       height: 200px;
+  //     }
+  //   }
+  // }
 }
 
 @keyframes cursor {
@@ -476,10 +502,12 @@ body {
   .logo-images {
     width: 250px;
     opacity: 0.5;
+
     &:hover {
       opacity: 1;
     }
   }
+
   .logo-image {
     width: 250px;
     opacity: 0.5;
@@ -488,53 +516,94 @@ body {
       opacity: 1;
     }
   }
-  @media screen and (max-width:576px){
-    
-    .logo-images{
+
+  @media screen and (max-width:576px) {
+
+    .logo-images {
       width: 200px;
     }
-    .logo-image{
+
+    .logo-image {
       display: none;
     }
   }
 }
 
-.easy-to-launch{
-  .cream-background{
+.easy-to-launch {
+  .cream-background {
     background-color: $cream-color;
-    height: 500px;
+    height: 550px;
     border-radius: 20px;
-    .white-background{
+    z-index: -1;
+
+    .white-background {
       background-color: $white-color;
-      width: 50px;
-      height: 20px;
-      
+      width: 400px;
+      height: 50px;
+    }
+
+    .gallery-img {
+      width: 300px;
+      height: 200px;
+      // z-index: 99;
     }
   }
-  .easy-right{
-    .easy-launch{
+
+  .easy-right {
+    .easy-launch {
       background-color: $lightgreen-color;
     }
-    .create-text{
+
+    .create-text {
       font-size: 50px;
     }
-    .full-administration{
+
+    .full-administration {
       font-size: 20px;
       color: $grey-color;
     }
+
     .shirts {
       width: 100px;
       height: 100px;
     }
-    .sell{
+
+    .sell {
       font-size: 20px;
     }
-    .duis{
+
+    .duis {
       font-size: 16px;
       color: $grey-color;
     }
-    .globe{
-      font-size: 20px;
+
+    .globe {
+      font-size: 60px;
     }
+  }
+}
+
+.counters {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 0;
+  margin: 0 250px;
+
+  .counter {
+    font-size: 70px;
+  }
+
+  .count-content {
+    font-size: 20px;
+    font-weight: 500;
+    color: $grey-color;
+  }
+
+  .trusted {
+    padding: 70px 80px;
+  }
+
+  .person-team {
+    padding: 140px 0;
   }
 }
